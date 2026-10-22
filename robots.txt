@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://rhartmuth.github.io/schadenpilot-website/sitemap.xml
