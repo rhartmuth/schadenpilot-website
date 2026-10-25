@@ -43,3 +43,12 @@
   .floating-note small{font-size:9px}
   .note-icon{width:27px;height:27px;font-size:14px}
 }
+
+
+/* Weitere Projekte – passend zum hellen SchadenPilot-Footer */
+.other-projects{display:flex;align-items:center;gap:14px 24px;flex-wrap:wrap;padding:24px 0;margin-bottom:0;border-top:1px solid #d9e2ed}
+.other-projects-label{font-size:13px;font-weight:750;color:#475f7c}
+.other-projects-links{display:flex;gap:10px;flex-wrap:wrap}
+.other-projects-links a{display:inline-flex;gap:7px;align-items:center;border:1px solid #c5d5e8;padding:9px 15px;border-radius:999px;background:#fff;color:#23456d;text-decoration:none;font-size:13px;font-weight:700;transition:background .15s,border-color .15s}
+.other-projects-links a:hover,.other-projects-links a:focus-visible{background:#e8f1ff;border-color:#5089ce;color:#174e9b;text-decoration:none}
+@media(max-width:550px){.other-projects{align-items:flex-start;flex-direction:column;gap:12px}.other-projects-links{gap:8px}}
