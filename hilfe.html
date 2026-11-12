@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#f6f8fc">
+<meta name="description" content="Offizielle SchadenPilot Bedienungsanleitung: Schäden erfassen, Fotos und LiDAR dokumentieren, PDF-Berichte, Aufgaben, Teamfreigaben, Datensicherung und PRO.">
+<link rel="canonical" href="https://rhartmuth.github.io/schadenpilot-website/hilfe.html">
+<link rel="icon" type="image/png" href="assets/images/schadenpilot-app-icon.png">
+<link rel="stylesheet" href="assets/styles.css"><title>Hilfe & Bedienungsanleitung | SchadenPilot</title>
+<style>
+.help-hero{padding:72px 0 34px;background:linear-gradient(135deg,#071a39,#174b97);color:white}
+.help-hero h1{font-size:clamp(2.1rem,5vw,3.6rem);line-height:1.1;margin:12px 0}
+.help-hero p{max-width:730px;color:#e0edff;line-height:1.7}
+.help-hero .eyebrow{letter-spacing:.13em;font-size:.75rem;font-weight:700;color:#a9cfff}
+.help-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:25px}
+.help-actions a,.help-actions button{border:1px solid #bdd5ff;background:white;color:#103a71;padding:13px 17px;border-radius:12px;font-weight:700;cursor:pointer;text-decoration:none;font:inherit}
+.help-actions .subtle{background:transparent;color:white;border-color:#aac5e8}
+.help-page{padding:44px 0 80px;background:#f4f7fc}
+.help-layout{display:grid;grid-template-columns:248px minmax(0,1fr);gap:32px;align-items:start}
+.help-toc{position:sticky;top:96px;background:#fff;border:1px solid #e0e6f1;border-radius:20px;padding:21px}
+.help-toc strong{display:block;margin-bottom:15px;color:#162b48}
+.help-toc a{display:block;color:#34516d;text-decoration:none;padding:8px;border-radius:8px;font-size:.9rem}
+.help-toc a:hover,.help-toc a:focus-visible{background:#edf4ff;color:#1355a5}
+.help-contents{min-width:0}
+.help-lead,.help-chapter{background:white;border:1px solid #e0e6f1;box-shadow:0 8px 28px #203e6910;border-radius:21px;padding:clamp(20px,3vw,34px);margin-bottom:18px}
+.help-chapter{scroll-margin-top:95px}
+.help-chapter h2{font-size:clamp(1.3rem,2.5vw,1.8rem);margin:0 0 13px;color:#142c4c}
+.help-chapter h3{font-size:1.05rem;color:#1d4777;margin:23px 0 10px}
+.help-chapter p,.help-chapter li,.help-lead li{line-height:1.75;color:#354b65}
+.help-chapter ol,.help-lead ol{padding-left:23px}
+.help-note{background:#e9f3ff;border-left:4px solid #2a74cf;border-radius:10px;padding:14px 17px;margin-top:16px;color:#18395c;line-height:1.65}
+.help-warning{background:#fff5e6;border-left-color:#d89b3b}
+.help-images{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin:20px 0}
+.help-images figure{margin:0;text-align:center}
+.help-images img{width:100%;max-height:300px;object-fit:contain;border:1px solid #dfe7f2;border-radius:14px;background:#fafbfe}
+.help-images figcaption{font-size:.78rem;color:#536c88;margin-top:7px}
+.help-search{width:100%;padding:13px 16px;border:1px solid #bfcede;border-radius:11px;font:inherit;box-sizing:border-box;margin-top:10px}
+.help-meta{color:#657a91;font-size:.86rem}
+.help-chapter[hidden]{display:none!important}
+@media(max-width:850px){.help-layout{grid-template-columns:1fr}.help-toc{position:static}.help-toc .links{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));column-gap:8px}.help-images{gap:6px}.help-images img{max-height:220px}}
+@media(max-width:530px){.help-toc .links{grid-template-columns:1fr}.help-images{grid-template-columns:1fr}.help-images img{max-height:280px}.help-hero{padding-top:50px}}
+@media print{.site-header,.site-footer,.help-toc,.help-actions,.help-search{display:none!important}.help-layout{display:block}.help-hero{color:#102747;background:white;padding:18px 0}.help-hero p{color:#222}.help-page{padding:10px;background:white}.help-chapter,.help-lead{box-shadow:none;border:1px solid #ccc;break-inside:avoid}.help-chapter[hidden]{display:block!important}body{background:white}}
+</style>
+</head>
+<body>
+<a class="skip-link" href="#main">Zum Inhalt springen</a>
+<header class="site-header">
+<div class="shell header-inner"><a class="brand" href="index.html" aria-label="SchadenPilot Startseite"><span class="brand-mark"><img src="assets/images/schadenpilot-app-icon.png" alt="" width="46" height="46"></span><span>Schaden<span class="brand-accent">Pilot</span><small>Digitale Schadenakte</small></span></a>
+<nav class="desktop-nav" aria-label="Hauptnavigation"><a href="index.html">Startseite</a><a href="index.html#funktionen">Funktionen</a><a href="hilfe.html" aria-current="page">Anleitung</a><a href="index.html#fragen">FAQ</a></nav>
+<a class="header-cta" href="mailto:info@vooro.de?subject=SchadenPilot%20Support">Support kontaktieren <span aria-hidden="true">↗</span></a>
+</div></header>
+<main id="main">
+<section class="help-hero"><div class="shell"><span class="eyebrow">SCHADENPILOT / HILFE-CENTER</span><h1>Die Bedienungsanleitung.</h1>
+<p>Alle Funktionen einfach erklärt – vom ersten Schadensfall über Fotos, 3D-Scans und PDF-Berichte bis zur Zusammenarbeit im Team. Für iPhone und iPad.</p>
+<div class="help-actions"><a href="#schnellstart">Jetzt starten</a><button type="button" class="subtle" onclick="window.print()">Drucken / als PDF sichern</button></div></div></section>
+<section class="help-page"><div class="shell help-layout">
+<aside class="help-toc" aria-label="Inhaltsverzeichnis"><strong>Kapitel</strong><div class="links">
+<a href="#schnellstart">01 · Schnellstart</a><a href="#schaden">02 · Schadensfälle</a><a href="#fotos">03 · Fotos</a><a href="#lidar">04 · LiDAR & 3D</a><a href="#pdf">05 · PDF-Berichte</a><a href="#orga">06 · Aufgaben & Termine</a><a href="#team">07 · Teamfreigabe</a><a href="#sync">08 · Änderungen abgleichen</a><a href="#mitarbeiter">09 · Mitarbeiterverwaltung</a><a href="#backup">10 · Datensicherung</a><a href="#pro">11 · PRO-Einmalkauf</a><a href="#fragen">12 · Fragen & Lösungen</a></div></aside>
+<div class="help-contents">
+<div class="help-lead"><h2>Wonach suchst du?</h2><p>Wähle ein Kapitel oder suche nach einem Begriff. Die vollständige Anleitung ist außerdem direkt in der App unter <strong>Mehr → Hilfe & Bedienungsanleitung</strong> auch offline verfügbar.</p>
+<label for="help-search-input">Themen durchsuchen</label><input class="help-search" id="help-search-input" type="search" placeholder="z. B. Team, PDF, LiDAR, Datensicherung" autocomplete="off">
+<p class="help-meta">Stand: November 2026 · Aktueller Entwicklungsstand vor der ersten öffentlichen App-Store-Freigabe</p>
+<div class="help-images">
+<figure><img src="assets/images/dashboard.webp" alt="SchadenPilot Startübersicht" loading="lazy"><figcaption>Startübersicht</figcaption></figure>
+<figure><img src="assets/images/schaeden-details.webp" alt="Schadensfallansicht in SchadenPilot" loading="lazy"><figcaption>Schadensfälle</figcaption></figure>
+<figure><img src="assets/images/aufgaben-details.webp" alt="Aufgabenansicht in SchadenPilot" loading="lazy"><figcaption>Aufgaben</figcaption></figure></div></div>
+<section class="help-chapter" id="schnellstart"><h2>01 · Schnellstart</h2><ol><li>Öffne <strong>Start</strong> und wähle „Neuen Schaden erfassen“.</li><li>Trage Titel, Betroffen, Schadenart und Umfang ein. Ein Foto ist optional.</li><li>Speichere den Schaden und öffne ihn unter <strong>Schäden</strong>.</li><li>Ergänze Fotos, Maßnahmen, Aufgaben oder Termine.</li><li>Erstelle bei Bedarf unter „Schadenbericht (PDF)“ einen Bericht.</li></ol><p>Die Hauptbereiche heißen Start, Schäden, Aufgaben, Termine und Mehr. Die normale Dokumentation funktioniert ohne LiDAR-Hardware.</p></section>
+<section class="help-chapter" id="schaden"><h2>02 · Schadensfälle erstellen und bearbeiten</h2><ol><li>Unter Start oder Schäden einen neuen Fall beginnen.</li><li>Eine kurze, eindeutige Bezeichnung vergeben – etwa „Wasserschaden Küche“.</li><li>„Betroffen“, Schadenart, Umfang und gegebenenfalls Maßnahme auswählen.</li><li>Speichern und später unter Schäden erneut öffnen.</li><li>Angaben, Status oder Priorität ändern und oben rechts speichern.</li></ol><div class="help-note">Eine gegebenenfalls angezeigte Kostenspanne ist eine unverbindliche Orientierung und kein Gutachten.</div></section>
+<section class="help-chapter" id="fotos"><h2>03 · Fotos aufnehmen und markieren</h2><ol><li>Einen Schadensfall öffnen und den Bereich Fotos auswählen.</li><li>Ein neues Foto aufnehmen oder aus der Mediathek hinzufügen.</li><li>Optional Raum, Aufnahmephase und Notizen ergänzen.</li><li>Schadenstellen mit der Markierungsfunktion hervorheben und speichern.</li><li>Die Markierungen vor der PDF-Erstellung kontrollieren.</li></ol><div class="help-note">Private Fotos werden nicht automatisch für alle Teammitglieder freigegeben.</div></section>
+<section class="help-chapter" id="lidar"><h2>04 · LiDAR, Raumkarten und Schadenspunkte</h2><ol><li>Auf einem LiDAR-fähigen iPhone oder iPad die LiDAR-Funktion des Schadensfalls öffnen.</li><li>Einen Raum scannen oder eine bestehende Raumkarte öffnen.</li><li>Den Scan speichern, die Schadensstelle in 2D oder 3D markieren und die Markierung sichern.</li><li>Zur Teamfreigabe anschließend „Fotos und LiDAR bereitstellen / aktualisieren“ wählen.</li></ol><div class="help-note help-warning"><strong>Hinweis:</strong> Die Anzeige der 3D-Schadenspunkte auf einem zweiten Gerät ist noch nicht abschließend getestet. Für die zuverlässige Dokumentation den vollständigen PDF-Bericht aus der Eigentümerakte zusätzlich freigeben.</div></section>
+<section class="help-chapter" id="pdf"><h2>05 · PDF-Schadenberichte</h2><ol><li>Den Schadensfall öffnen und „Schadenbericht (PDF)“ wählen.</li><li>Den vollständigen Bericht erstellen und die Vorschau überprüfen.</li><li>Über das Teilen-Menü das PDF speichern oder versenden.</li><li>Für Teammitglieder die gespeicherte Datei über „Mit Team teilen → Vollständigen PDF-Bericht bereitstellen“ separat hochladen.</li></ol><div class="help-note">Der auf einem Teamgerät separat erzeugte Bericht enthält nicht zwingend alle speziellen Anlagen aus der privaten Originalakte.</div></section>
+<section class="help-chapter" id="orga"><h2>06 · Aufgaben, Termine und Erinnerungen</h2><ol><li>Unter Aufgaben oder Termine einen Eintrag erstellen.</li><li>Titel, Fälligkeit, gegebenenfalls Zuständigkeit und Notiz eingeben.</li><li>Den Eintrag optional einem Schadensfall zuordnen.</li><li>Speichern und bei Bedarf eine lokale Erinnerung aktivieren.</li><li>Unter Mehr → Benachrichtigungen geplante Mitteilungen prüfen.</li></ol><div class="help-note">Gerätebezogene Erinnerungen werden nicht automatisch an andere Apple-Geräte übertragen.</div></section>
+<section class="help-chapter" id="team"><h2>07 · Einen Schadensfall im Team teilen</h2><ol><li>Auf dem Eigentümergerät einen Fall unter Schäden öffnen.</li><li>„Mit Team teilen“ wählen und die CloudKit-Freigabe vorbereiten.</li><li>Den Einladungslink an die gewünschte Apple-ID senden.</li><li>Das Teammitglied nimmt die Einladung an und öffnet den Fall unter Schäden.</li><li>Später hinzugefügte Fotos, LiDAR-Dateien und vollständige PDFs separat freigeben.</li></ol><div class="help-note">Nur ausdrücklich freigegebene Schadenakten werden geteilt – niemals automatisch die gesamte lokale Datenbank.</div></section>
+<section class="help-chapter" id="sync"><h2>08 · Teamänderungen abgleichen</h2><h3>Vom Team zum Eigentümer</h3><ol><li>Auf dem zweiten Gerät Angaben bearbeiten und „Änderungen im Team speichern“ wählen.</li><li>Auf dem Eigentümergerät „Mit Team teilen → Teamänderungen laden“ öffnen.</li><li>Die abweichenden Werte sorgfältig vergleichen.</li><li>Erst danach „Teamänderungen in meine Akte übernehmen“ bestätigen.</li></ol><h3>Vom Eigentümer zum Team</h3><ol><li>Zunächst den aktuellen Teamstand laden und prüfen.</li><li>Eigene Angaben lokal speichern.</li><li>„Meine aktuellen Angaben ans Team senden“ bestätigen.</li><li>Auf dem Teamgerät den Stand erneut aktualisieren.</li></ol><div class="help-note help-warning">Der Abgleich ist bewusst manuell. Ältere Angaben können neuere Werte überschreiben, wenn du sie ungeprüft übernimmst oder versendest.</div></section>
+<section class="help-chapter" id="mitarbeiter"><h2>09 · Zentrale Mitarbeiterverwaltung</h2><ol><li>Mehr → Team-Synchronisierung öffnen.</li><li>„Mitarbeiter & Zugriffe verwalten“ auswählen.</li><li>Freigegebene Fälle und eingeladene Teilnehmer samt Status ansehen.</li><li>Bei einem Fall „Freigabe verwalten“ öffnen.</li><li>Dort weitere Personen hinzufügen, Berechtigungen kontrollieren oder Teilnehmer verwalten.</li></ol><div class="help-note">Die Mitarbeiterübersicht ist zentral. Die Berechtigung wird weiterhin für jeden einzelnen Schadensfall vergeben.</div></section>
+<section class="help-chapter" id="backup"><h2>10 · Datensicherung und Wiederherstellung</h2><ol><li>Unter Mehr → Datensicherung den verschlüsselten Export öffnen.</li><li>Ein sicheres Passwort eingeben und die Sicherung erstellen.</li><li>Die erzeugte Sicherungsdatei über Dateien oder iCloud Drive sicher ablegen.</li><li>Zur Wiederherstellung die Datei auswählen, Passwort eingeben und den Prüfbericht lesen.</li><li>Fehlende Einträge nur nach Prüfung ergänzen und die wiederhergestellten Inhalte stichprobenartig kontrollieren.</li></ol><div class="help-note">Ohne Backup-Passwort kann die verschlüsselte Datei nicht entschlüsselt werden. Das Passwort getrennt von der Sicherung aufbewahren.</div></section>
+<section class="help-chapter" id="pro"><h2>11 · Kostenlos und PRO</h2><ol><li>Die ersten fünf Schadensfälle sind kostenlos.</li><li>Mehr → App-Einstellungen → Freischaltung öffnen.</li><li>Den angezeigten App-Store-Preis prüfen und „Dauerhaft freischalten“ wählen.</li><li>Den Einmalkauf bei Apple abschließen – kein Abonnement.</li><li>Bei einem Gerätewechsel „Käufe wiederherstellen“ mit demselben Apple-Account verwenden.</li></ol><div class="help-note">Der geplante deutsche Preis beträgt 14,99 € einmalig. Verbindlich ist der Preis im Apple-Kaufdialog. Das kostenlose Kontingent wird durch Löschen von Fällen nicht zurückgesetzt.</div></section>
+<section class="help-chapter" id="fragen"><h2>12 · Häufige Fragen & Problemlösungen</h2>
+<h3>Der Teamfall fehlt</h3><p>Prüfe den eingeladenen Apple-Account, die angenommene Freigabe und aktualisiere die Schäden-Ansicht.</p>
+<h3>Meine Änderung ist auf Handy 1 nicht sichtbar</h3><p>Auf Handy 2 „Änderungen im Team speichern“ wählen; auf Handy 1 „Teamänderungen laden“, vergleichen und bewusst übernehmen.</p>
+<h3>Fotos, LiDAR oder vollständiger PDF-Bericht fehlen</h3><p>Diese Anhänge müssen auf dem Eigentümergerät gesondert bereitgestellt beziehungsweise aktualisiert werden.</p>
+<h3>CloudKit zeigt eine Fehlermeldung</h3><p>Internetverbindung und iCloud-Anmeldung prüfen. Den genauen Fehler notieren und bestehende Freigaben nicht vorschnell löschen.</p>
+<h3>Wo bekomme ich persönliche Hilfe?</h3><p>Per E-Mail an <a href="mailto:info@vooro.de?subject=SchadenPilot%20Support">info@vooro.de</a>.</p>
+<div class="help-note">SchadenPilot ist ein Dokumentationswerkzeug und ersetzt keine professionelle Schadensbegutachtung, Sicherheitsprüfung oder verbindliche Versicherungsentscheidung.</div></section>
+</div></div></section></main>
+<footer class="site-footer"><div class="shell"><div class="footer-bottom"><span>© 2026 SchadenPilot</span><span><a href="index.html">Startseite</a> · <a href="hilfe.html">Bedienungsanleitung</a> · <a href="datenschutz.html">Datenschutz</a> · <a href="impressum.html">Impressum</a></span></div></div></footer>
+<script>
+(function(){const field=document.getElementById('help-search-input');const sections=[...document.querySelectorAll('.help-chapter')];field.addEventListener('input',()=>{const q=field.value.trim().toLocaleLowerCase('de');sections.forEach(section=>{section.hidden=!!q&&!section.textContent.toLocaleLowerCase('de').includes(q)})})})();
+</script>
+</body></html>
