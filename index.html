@@ -98,8 +98,46 @@
           <div class="function-visual visual-blue"><div class="image-window"><img src="assets/images/schaeden-details.webp" alt="Echter Screenshot einer Schadenfall-Karte mit Vorgangsnummer, Status und Priorität" width="944" height="2048"></div></div>
           <div class="function-visual visual-lilac"><div class="image-window"><img src="assets/images/aufgaben-details.webp" alt="Echte Aufgabenübersicht in SchadenPilot mit einer Aufgabenkarte" width="944" height="2048"></div></div>
           <div class="function-text"><span class="function-count">02</span><div class="function-symbol">◉</div><h3>Aufgaben &amp; Termine koordinieren</h3><p>Fälligkeiten, Besichtigungen und offene To-dos mit Schadenakten verknüpfen. Dringendes ist schneller erkennbar.</p><span class="function-detail">PLANEN · ZUORDNEN · ABSCHLIESSEN</span></div>
-          <div class="function-text"><span class="function-count">03</span><div class="function-symbol">⌗</div><h3>Dokumentation sicher festhalten</h3><p>Fotodokumentation, digitale Raumskizzen und Berichte unterstützen eine nachvollziehbare Schadenaufnahme.</p><span class="function-detail">FOTOS · GRUNDRISSE · BERICHTE</span></div>
-          <div class="function-visual visual-mint"><div class="function-illustration"><div class="illus-head"><span>WOHNUNG / DOKUMENTATION</span><span>◌ ◌ ◌</span></div><div class="plan-art" aria-hidden="true"><div class="room room-a"><span>Bad</span><i class="wall-mark mark-door"></i></div><div class="room room-b"><span>Flur</span></div><div class="room room-c"><span>Wohnen</span></div></div><p>Räume und Schadenstellen<br>übersichtlich erfassen.</p></div></div>
+          <div class="function-text"><span class="function-count">03</span><div class="function-symbol">⌗</div><h3>Dokumentation sicher festhalten</h3><p>Schadensfotos, digitale Raumskizzen, LiDAR-3D-Scans und PDF-Berichte halten die Schadenaufnahme nachvollziehbar fest. Auf kompatiblen Geräten kannst du Schadenstellen im 3D-Modell markieren.</p><span class="function-detail">FOTOS · 2D-GRUNDRISSE · LIDAR 3D · PDF</span></div>
+          <div class="function-visual visual-mint visual-documentation">
+            <div class="function-illustration function-illustration-doc">
+              <div class="illus-head"><span>RAUMDOKUMENTATION</span><span class="illus-live">2D + 3D</span></div>
+              <div class="document-modes">
+                <div class="document-mode">
+                  <span class="mode-caption">01 / RAUMSKIZZE</span>
+                  <div class="plan-art plan-art-compact" aria-label="Schematischer 2D-Grundriss mit Bad, Flur und Wohnen" role="img"><div class="room room-a"><span>Bad</span><i class="wall-mark mark-door"></i></div><div class="room room-b"><span>Flur</span></div><div class="room room-c"><span>Wohnen</span></div></div>
+                  <span class="mode-foot">Grundriss &amp; Räume</span>
+                </div>
+                <div class="document-mode document-mode-lidar">
+                  <span class="mode-caption">02 / LIDAR-SCAN</span>
+                  <svg class="lidar-model-art" viewBox="0 0 220 165" role="img" aria-labelledby="lidar-model-title lidar-model-desc" xmlns="http://www.w3.org/2000/svg">
+                    <title id="lidar-model-title">Beispielhafte LiDAR-Raumerfassung mit roter Schadensmarkierung</title>
+                    <desc id="lidar-model-desc">Schematisch dargestelltes dreidimensionales Raummodell mit Wänden, Bodenraster und einem roten markierten Schadenpunkt.</desc>
+                    <defs>
+                      <linearGradient id="lidarFloor" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#DAEDF8"/><stop offset="1" stop-color="#9DCEDE"/></linearGradient>
+                      <linearGradient id="lidarWall" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#E9F7FB"/><stop offset="1" stop-color="#B4D9E7"/></linearGradient>
+                    </defs>
+                    <path d="M25 47 110 12 195 48 110 89Z" fill="#F3FBFF" stroke="#367A96" stroke-width="2.4" stroke-linejoin="round"/>
+                    <path d="M25 47 110 89 110 151 25 108Z" fill="url(#lidarWall)" stroke="#367A96" stroke-width="2.4" stroke-linejoin="round"/>
+                    <path d="M110 89 195 48 195 108 110 151Z" fill="#D7EDF5" stroke="#367A96" stroke-width="2.4" stroke-linejoin="round"/>
+                    <path d="M25 108 110 151 195 108 110 68Z" fill="url(#lidarFloor)" stroke="#367A96" stroke-width="2.4" stroke-linejoin="round"/>
+                    <g fill="none" stroke="#4B9EB8" stroke-width=".9" opacity=".6">
+                      <path d="M47 119 133 79M68 130 153 89M90 140 173 98M47 97 131 140M68 87 152 130M89 77 173 119"/>
+                      <path d="M25 67 110 108 195 67M25 88 110 129 195 88" stroke-dasharray="3 3"/>
+                      <path d="M53 60 53 121M81 74 81 136M138 76 138 136M167 62 167 122" stroke-dasharray="2 4"/>
+                    </g>
+                    <path d="M110 89 110 151" stroke="#286D91" stroke-width="2.3"/>
+                    <circle cx="153" cy="99" r="14" fill="#EA514E" opacity=".15"/>
+                    <circle cx="153" cy="99" r="8" fill="none" stroke="#E74747" stroke-width="2"/>
+                    <circle cx="153" cy="99" r="4.2" fill="#E74747" stroke="#fff" stroke-width="1.5"/>
+                  </svg>
+                  <span class="mode-foot"><span class="mode-red-dot" aria-hidden="true"></span> 3D-Modell &amp; Schadenpunkt</span>
+                </div>
+              </div>
+              <p class="doc-caption">Schadenstellen in 2D dokumentieren oder mit LiDAR räumlich erfassen.</p>
+              <span class="doc-art-note">Schematische Darstellung · LiDAR benötigt ein kompatibles Gerät.</span>
+            </div>
+          </div>
         </div>
       </div>
     </section>
